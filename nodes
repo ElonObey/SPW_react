@@ -1,0 +1,7 @@
+Тама табличка, глядеть туда
+https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets
+
+settings.json -> "javascript.updateImportsOnFileMove.enabled": "prompt"
+
+Для сравнения react v5 c v6
+https://reactrouter.com/en/main/upgrading/v5#use-usenavigate-instead-of-usehistory

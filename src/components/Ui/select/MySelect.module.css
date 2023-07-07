@@ -1,0 +1,7 @@
+.select {
+    background-color: rgb(61, 61, 61);
+    color: rgb(182, 182, 182);
+    padding: 10px 25px;
+    margin: 5px;
+    border:2px solid teal;
+}

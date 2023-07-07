@@ -1,0 +1,16 @@
+.head {
+    background-color: #383838;
+    width: 100%;
+    display: flex;
+}
+.component {
+    margin: 1rem;
+}
+.component:first-child{
+    margin-left: 3rem;
+}
+.component a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
