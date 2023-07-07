@@ -54,3 +54,15 @@
     display: flex;
     margin-left: 20px;
 }
+.postPage{
+    color: rgb(240, 240, 240);
+}
+.postPage_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+}
+.postPage_body {
+    font-size: 16px;
+}

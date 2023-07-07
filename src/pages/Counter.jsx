@@ -1,6 +1,7 @@
 import React from "react";
-import CounterBlock from "../components/CounterBlock";
-import ClassCounter from "../components/ClassCounter";
+import CounterBlock from "../components/Ui/Counters/CounterBlock";
+import ClassCounter from "../components/Ui/Counters/ClassCounter";
+
 const Counter = () => {
   return (
     <div>

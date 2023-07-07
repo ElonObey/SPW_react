@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import "./styles/main.css"
 
 // Двухстороннее  связывание, управляемый компонент
 const ValueBlock = function () {
   const [value, setValue] = useState("");
 
   return (
-    <div>
+    <div className="value_block">
       <h1> Value block </h1>
       <input
         type="text"

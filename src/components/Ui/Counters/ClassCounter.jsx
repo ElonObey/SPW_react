@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./Counters.module.css"
 
 class ClassCounter extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class ClassCounter extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={style.count_block}>
         <h1> ClassComponent </h1>
         <button onClick={this.increment}> Increment </button>
         <button onClick={this.decrement}> Decrement </button>
