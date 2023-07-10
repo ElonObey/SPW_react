@@ -104,3 +104,14 @@ html {
 .value_block {
     color: rgb(240, 240, 240);
 }
+.login_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: rgb(240, 240, 240);
+}
+.login_item {
+    margin-top: 30px;
+}

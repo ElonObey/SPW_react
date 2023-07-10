@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
+import "../components/styles/main.css";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -17,13 +18,15 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="login_block">
       <h1> Login page</h1>
-      {fromPage}
-      <form onSubmit={handleSubmit}>
-        <input name="username" type="text" />
-        <button type="submit"> login</button>
-      </form>
+      <p> Для перехода на {fromPage} необходимо авторизоваться </p>
+      <div className="login_item">
+        <form onSubmit={handleSubmit}>
+          <input name="username" type="text" />
+          <button type="submit"> login</button>
+        </form>
+      </div>
     </div>
   );
 };
