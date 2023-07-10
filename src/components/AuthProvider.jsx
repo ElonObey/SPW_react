@@ -14,6 +14,7 @@ export const AuthProvider = ({children}) => {
         callBack()
     }
     const value = {user, signin,signout}
+    console.log(value)
     return (
         <AuthContext.Provider value={value}>
             {children}
