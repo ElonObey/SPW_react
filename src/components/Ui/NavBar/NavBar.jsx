@@ -25,6 +25,12 @@ const NavBar = () => {
           <div className={style.component}>
             <Link to="/value"> Value </Link>
           </div>
+          <div className={style.component}>
+            <Link to="/navbar"> NavBars</Link>
+          </div>
+          <div className={style.component}>
+            <Link to="/containers"> Containers </Link>
+          </div>
         </div>
         <div className={style.btns}>
           <Mybutton onClick={goBack}> Назад </Mybutton>

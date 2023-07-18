@@ -10,6 +10,8 @@ import NavBar from "./Ui/NavBar/NavBar";
 import Login from "../pages/Login";
 import RequireAurh from "./RequireAuth";
 import AuthProvider from "./AuthProvider";
+import NavBars from "../pages/NavBars";
+import Containers from "../pages/Containers";
 
 // Сделать динамический роутинг постов
 
@@ -33,6 +35,8 @@ const AppRouter = () => {
         <Route path="value" element={<Value />} />
         <Route path="posts/:id" element={<PostPage />} />
         <Route path="login" element={<Login />} />
+        <Route path="navbar" element={<NavBars/>}/>
+        <Route path="containers" element={<Containers/>}/>
         <Route path="*" element={<Error />} />
       </Route>
     </Routes>

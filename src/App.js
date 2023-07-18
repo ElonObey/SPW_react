@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/Ui/NavBar/NavBar";
 import AppRouter from "./components/AppRouter";
 import "./components/styles/main.css"
+import { ThemeProvider } from "@mui/material";
+import theme from "./style";
 
 
 // Сделать динамический роутинг постов 
@@ -12,10 +14,12 @@ import "./components/styles/main.css"
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <BrowserRouter>
       {/* <NavBar /> */}
       <AppRouter />
     </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
