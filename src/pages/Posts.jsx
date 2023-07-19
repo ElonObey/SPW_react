@@ -7,7 +7,7 @@ import PostFilter from "../components/PostFilter";
 import PostList from "../components/Ui/PostsBlock/PostList";
 import Loader from "../components/Ui/Loader/Loader";
 import MyModal from "../components/Ui/MyModal/MyModal";
-import Mybutton from "../components/Ui/button/Mybutton";
+import Mybutton from "../components/Ui/button/MyButton/Mybutton";
 import Plagination from "../components/Ui/plagination/Plagination";
 // import Value from "../components/ValueBlock";
 import { getPageCount } from "../components/utils/pages";

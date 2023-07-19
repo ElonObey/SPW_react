@@ -1,6 +1,6 @@
 import React from "react";
 // import "./styles/main.css";
-import Mybutton from "../../button/Mybutton";
+import Mybutton from "../../button/MyButton/Mybutton";
 import { useLocation, useNavigate } from "react-router-dom";
 import style from "../Post.module.css";
 

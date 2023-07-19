@@ -1,10 +1,20 @@
-import { Box, Container, Typography, styled } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import React from 'react'
+
+
+const style = {
+  bgcolor: "#292929",
+  mt: 10,
+  pl: 5,
+  typography: {
+    color: "#FFFFFF",
+  }
+}
 
 function Containers() {
   return (
     <Container>
-        <Box>
+        <Box sx={style}>
           <Typography>Text</Typography>
         </Box>
     </Container>

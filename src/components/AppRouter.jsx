@@ -19,7 +19,7 @@ const AppRouter = () => {
   return (
     <AuthProvider>
     <Routes>
-      <Route path="/" element={<NavBar />}>
+      <Route path="/" element={<NavBars />}>
         <Route path="about" element={<About />} />
         <Route path="about-us" element={<Navigate to="/about" replace />} />
         {/* <Route path="posts" element={<Posts />} /> */}

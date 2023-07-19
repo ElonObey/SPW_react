@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Mybutton from "./Ui/button/Mybutton";
+import Mybutton from "./Ui/button/MyButton/Mybutton";
 import Myinput from "./Ui/input/Myinput";
 
 // { posts, setPosts }
