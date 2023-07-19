@@ -1,8 +1,9 @@
 import React from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import style from "./NavBar.module.css";
-import Mybutton from "../button/Mybutton";
+import Mybutton from "../button/MyButton/Mybutton";
 import { useAuth } from "../../../hooks/useAuth";
+
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -24,6 +25,12 @@ const NavBar = () => {
           </div>
           <div className={style.component}>
             <Link to="/value"> Value </Link>
+          </div>
+          <div className={style.component}>
+            <Link to="/navbar"> NavBars</Link>
+          </div>
+          <div className={style.component}>
+            <Link to="/containers"> Containers </Link>
           </div>
         </div>
         <div className={style.btns}>
