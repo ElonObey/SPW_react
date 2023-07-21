@@ -1,19 +1,30 @@
+// Colors
+// https://mui.com/material-ui/customization/dark-mode/
+
+// CSS comands
+// https://mui.com/system/properties/#properties-reference-table
+
 import { createTheme } from "@mui/material";
 
 let theme = createTheme({
     palette: {
         mode: 'dark',
         primaryDark: {
-            main: "#FFFFF",
+            main: "#FFFFFF"
         },
         primary: {
-            main: "#FFFFF"
+            main: "#FFFFFF"
         },
         secondary: {
-            main: "#FFFFF",
+            main: "#d9d9d9",
         },
         text: {
-            main: "#FFFFF",
+            main: "#FFFFFF",
+            secondary: "rgba(255, 255, 255, 0.7)"
+        },
+        background: {
+            default: "rgb(34, 34, 34)",
+            paper: "divider",
         },
     },
     typography:{

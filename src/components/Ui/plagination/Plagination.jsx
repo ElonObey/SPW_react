@@ -1,10 +1,17 @@
-import React from 'react';
-import { getPagesArray } from '../../utils/pages';
+import React from "react";
+import { getPagesArray } from "../../utils/pages";
+import { Pagination } from "@mui/material";
 
-const Plagination = ({page, changePage, totalPages}) => {
-    let pagesArray = getPagesArray(totalPages);
-    return (
-        <div className="btn__wrapper">
+const Plagination = ({ page, changePage, totalPages }) => {
+  let pagesArray = getPagesArray(totalPages);
+  const handleChange = (event, value) => {
+    changePage(value)
+  };
+  return (
+    <>
+      <Pagination count={totalPages} shape="rounded" onChange={handleChange} />
+
+      {/* <div className="btn__wrapper">
         {pagesArray.map((p) => (
           <span
             key={p}
@@ -14,8 +21,9 @@ const Plagination = ({page, changePage, totalPages}) => {
             {p}
           </span>
         ))}
-      </div>
-    );
+      </div> */}
+    </>
+  );
 };
 
 export default Plagination;

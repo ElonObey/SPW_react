@@ -13,6 +13,7 @@ import Plagination from "../components/Ui/plagination/Plagination";
 import { getPageCount } from "../components/utils/pages";
 import { usePosts } from "../hooks/usePosts";
 import { useFetching } from "../hooks/userFetching";
+import { Stack, Pagination, Button } from "@mui/material";
 
 function Posts() {
   const [posts, setPosts] = useState([
@@ -74,12 +75,16 @@ function Posts() {
 
       {/* <button onClick={fetchPosts}>Get posts</button> */}
 
+      <PostFilter filter={filter} setFilter={setFilter} />
+      <Button variant="contained" onClick={() => setModal(true)}>
+        Create post
+      </Button>
+
       <MyModal visible={modal} setVisible={setModal}>
         <InputForm create={createPost} />
       </MyModal>
-      <PostFilter filter={filter} setFilter={setFilter} />
+
       {postError && <h1> Произошла ошибка ${postError}</h1>}
-      <div className="posts-blk"></div>
       {isPostsLoading ? (
         <div
           style={{ display: "flex", justifyContent: "center", marginTop: 50 }}
@@ -93,14 +98,14 @@ function Posts() {
           title="Список постов"
         />
       )}
-      <div className="btn_pst">
+
+      <Stack sx={{ display: "flex", alignItems: "center", my: 4 }}>
         <Plagination
           page={page}
           changePage={changePage}
           totalPages={totalPages}
         />
-        <Mybutton onClick={() => setModal(true)}> Создать пост </Mybutton>
-      </div>
+      </Stack>
     </div>
   );
 }

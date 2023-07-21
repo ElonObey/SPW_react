@@ -18,14 +18,13 @@ function NavBars() {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="static" sx={{mb: 5}}>
         <Toolbar>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <AccessibleForwardIcon />
             <Typography
               variant="h6"
-              color="inherit"
-              component="div"
+              // component="div"
               sx={{ mx: 1 }}
             >
               Fast testi

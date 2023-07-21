@@ -30,8 +30,6 @@ const PostPage = () => {
 
   return (
     <div>
-      {/* <h1>Post Page</h1> */}
-      {/* <h2> ID поста: {params.id}</h2> */}
       <PostTitle id={params.id}/>
 
       <h1>Коментарии</h1>
