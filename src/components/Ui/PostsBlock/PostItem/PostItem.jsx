@@ -35,7 +35,7 @@ function PostItem(props) {
             {props.post.id}. {props.post.title}
           </Typography>
 
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2">
             {props.post.body}
           </Typography>
         </CardContent>

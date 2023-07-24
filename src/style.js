@@ -20,7 +20,8 @@ let theme = createTheme({
         },
         text: {
             main: "#FFFFFF",
-            secondary: "rgba(255, 255, 255, 0.7)"
+            secondary: "rgba(255, 255, 255, 0.7)",
+            primaryDark: "#121212"
         },
         background: {
             default: "rgb(34, 34, 34)",

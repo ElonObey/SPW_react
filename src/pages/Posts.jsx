@@ -13,7 +13,7 @@ import Plagination from "../components/Ui/plagination/Plagination";
 import { getPageCount } from "../components/utils/pages";
 import { usePosts } from "../hooks/usePosts";
 import { useFetching } from "../hooks/userFetching";
-import { Stack, Pagination, Button } from "@mui/material";
+import { Stack, Pagination, Button, Modal, Typography } from "@mui/material";
 
 function Posts() {
   const [posts, setPosts] = useState([
@@ -63,6 +63,9 @@ function Posts() {
     setPage(page);
     fetchPosts(limit, page);
   };
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <div className="App">
@@ -76,13 +79,20 @@ function Posts() {
       {/* <button onClick={fetchPosts}>Get posts</button> */}
 
       <PostFilter filter={filter} setFilter={setFilter} />
-      <Button variant="contained" onClick={() => setModal(true)}>
+      {/* <Button variant="contained" onClick={() => setModal(true)}>
         Create post
-      </Button>
+      </Button> */}
 
-      <MyModal visible={modal} setVisible={setModal}>
+      <Button onClick={handleOpen}>
+        Open modal
+      </Button>
+      <Modal open={open} onClose={handleClose}>
+        <Typography color="text.secondary"> Modal </Typography>
+      </Modal>
+
+      {/* <MyModal visible={modal} setVisible={setModal}>
         <InputForm create={createPost} />
-      </MyModal>
+      </MyModal> */}
 
       {postError && <h1> Произошла ошибка ${postError}</h1>}
       {isPostsLoading ? (

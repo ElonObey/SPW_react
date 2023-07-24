@@ -1,6 +1,16 @@
 import React, { useRef, useState } from "react";
 import Mybutton from "./Ui/button/MyButton/Mybutton";
 import Myinput from "./Ui/input/Myinput";
+import {
+  Button,
+  Container,
+  FormControl,
+  Modal,
+  Paper,
+  Stack,
+  TextField,
+  Typography,
+} from "@mui/material";
 
 // { posts, setPosts }
 const InputForm = ({ create }) => {
@@ -17,10 +27,10 @@ const InputForm = ({ create }) => {
   };
 
   return (
-    <div>
-      <h1>Input form</h1>
+    <>
+
+      {/* <h1>Input form</h1>
       <form>
-        {/* Так же управляемый компонент */}
         <Myinput
           value={post.title}
           onChange={(e) => setPost({ ...post, title: e.target.value })}
@@ -35,8 +45,8 @@ const InputForm = ({ create }) => {
         />
 
         <Mybutton onClick={addNewPost}> Создать пост </Mybutton>
-      </form>
-    </div>
+      </form> */}
+    </>
   );
 };
 
